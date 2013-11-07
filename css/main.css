@@ -1,0 +1,295 @@
+body {
+    background-image:url('../img/snow.png');
+}
+
+div.things {
+    display:none;
+}
+
+.gr {
+    color: rgba(216,165,32,1);
+}
+
+.centered {
+    text-align: center;
+}
+
+
+.page {
+    margin-bottom: 50px;
+    overflow: auto;
+    height: 1500px;
+}
+
+.centered-pills { text-align:center; }
+.centered-pills ul.nav-pills { display:inline-block; }
+.centered-pills li { display:inline; }
+.centered-pills a { float:left; }
+* html .centered-pills ul.nav-pills { display:inline; } /* IE6 */
+*+html .centered-pills ul.nav-pills { display:inline; } /* IE7 */
+
+.navbar .navbar-inner {
+    padding: 0;
+    font-size: 20px;
+}
+.navbar .nav {
+    margin: 0;
+    display: table;
+    width: 100%;
+}
+.navbar .nav li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+}
+.navbar .nav li a {
+    font-weight: bold;
+    text-align: center;
+    border-left: 1px solid rgba(255,255,255,.75);
+    border-right: 1px solid rgba(0,0,0,.1);
+    color: rgba(216,165,32,1);
+    text-shadow: none;
+}
+.navbar .nav li:first-child a {
+    border-left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.navbar .nav li:last-child a {
+    border-right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.navbar-inner {
+background-color:rgba(72,145,206,1);
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+}
+
+.plat {
+    margin-bottom: 10px;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+    #mobile-nav {
+        display: none;
+    }
+
+    #head {
+        background-image: url('../img/4637.jpg');
+        background-repeat:no-repeat;
+        /*height: 655px;*/
+        background-position: 1000%, 100%;
+    }
+    #head-text {
+        background-color:rgba(0,0,0,0.5);
+        padding: 15px;
+        width: 600px;
+        color: white;
+    }
+    #smt {
+        position: relative;
+    }
+
+    #media {
+        display:block;
+        top:50px;
+        left:0px;
+        position: fixed;
+    }
+
+    #media > img {
+        margin-bottom: 5px;
+    }
+
+    #mobile-media {
+        display:none;
+    }
+}
+
+@media (min-width: 980px) and (max-width: 1199px) {
+
+    #mobile-nav {
+        display: none;
+    }
+
+    #head {
+        background-image: url('../img/4285.jpg');
+        background-repeat:no-repeat;
+        background-attachment: scroll;
+        background-position: 70%, -200%;
+    }
+    #head-text {
+        /*background-color:rgba(0,0,0,0.5);*/
+        padding: 15px;
+        color: white;
+    }
+    #smt {
+        position: relative;
+    }
+
+    #media {
+        display:block;
+        top:50px;
+        left:0px;
+        position: fixed;
+    }
+
+    #media > img {
+        margin-bottom: 5px;
+    }
+
+    #mobile-media {
+        display:none;
+    }
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+    #mobile-nav {
+        display: none;
+    }
+
+    #head {
+        background-image: url('../img/4285.jpg');
+        background-repeat:no-repeat;
+        background-attachment: scroll;
+        background-position: 70%, -200%;
+    }
+    #head-text {
+        /*background-color:rgba(0,0,0,0.5);*/
+        padding: 15px;
+        color: white;
+    }
+    #smt {
+        position: relative;
+    }
+
+        #media {
+        display:block;
+        top:50px;
+        left:0px;
+        position: fixed;
+    }
+
+    #media > img {
+        margin-bottom: 5px;
+    }
+
+    #mobile-media {
+        display:none;
+    }
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    #main-nav {
+        display: none;
+    }
+
+    #media {
+        display:none;
+    }
+
+    #mobile-nav {
+        display: inline;
+    }
+
+    #mobile-media {
+        margin-bottom: 15px;
+    }
+
+    #head {
+        background-image: url('../img/4285.jpg');
+        background-repeat:no-repeat;
+        background-attachment: scroll;
+        background-position: 70%, -200%;
+    }
+    #head-text {
+        /*background-color:rgba(0,0,0,0.5);*/
+        padding: 15px;
+        color: white;
+    }
+    #smt {
+        position: relative;
+    }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+    #main-nav {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: inline;
+    }
+
+    #media {
+        display: none;
+    }
+
+    #mobile-media {
+        margin-bottom: 15px;
+    }
+
+    #head {
+        background-image: none;
+        /*background-image: url('../joe-pix/4285.jpg');*/
+        background-color:rgba(72,145,206,1);
+        background-repeat:no-repeat;
+        background-attachment: scroll;
+        background-position: 70%, -200%;
+    }
+    #head-text {
+        padding: 15px;
+        color: rgba(216,165,32,1);
+    }
+    #smt {
+        position: relative;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+
+    #main-nav {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: inline;
+    }
+
+    #media {
+        display: none;
+    }
+
+    #mobile-media {
+        margin-bottom: 15px;
+    }
+
+    #head {
+        background-image: none;
+        /*background-image: url('../joe-pix/4285.jpg');*/
+        background-color:rgba(72,145,206,1);
+        background-repeat:no-repeat;
+        background-attachment: scroll;
+        background-position: 70%, -200%;
+    }
+    #head-text {
+        padding: 15px;
+        color: rgba(216,165,32,1);
+    }
+    #smt {
+        position: relative;
+    }
+}
+
+

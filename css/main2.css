@@ -1,0 +1,455 @@
+body {
+    background-image:url('../img/snow.png');
+    margin-bottom: 100px;
+}
+
+a#hash {
+    color: rgba(72,145,206,1);
+}
+
+a:hover#hash {
+    color: rgba(216,165,32,1);;
+}
+
+a#vote {
+    color: rgba(72,145,206,1);
+}
+
+a:hover#vote {
+    color: rgba(216,165,32,1);;
+}
+
+div.things {
+    display:none;
+}
+
+.gr {
+    color: rgba(216,165,32,1);
+}
+
+.tb {
+    color: rgba(72,145,206,1);
+}
+
+.centered {
+    text-align: center;
+}
+
+
+.page {
+    overflow: auto;
+}
+
+.centered-pills { text-align:center; }
+.centered-pills ul.nav-pills { display:inline-block; }
+.centered-pills li { display:inline; }
+.centered-pills a { float:left; }
+* html .centered-pills ul.nav-pills { display:inline; } /* IE6 */
+*+html .centered-pills ul.nav-pills { display:inline; } /* IE7 */
+
+.navbar .navbar-inner {
+    padding: 0;
+}
+.navbar .nav {
+    margin: 0;
+    display: table;
+    width: 100%;
+}
+.navbar .nav li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+}
+.navbar .nav li a {
+    font-weight: bold;
+    text-align: center;
+    border-left: 1px solid rgba(255,255,255,.75);
+    border-right: 1px solid rgba(0,0,0,.1);
+    color: rgba(216,165,32,1);
+    text-shadow: none;
+}
+.navbar .nav li:first-child a {
+    border-left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.navbar .nav li:last-child a {
+    border-right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.navbar-inner {
+background-color:rgba(72,145,206,1);
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+}
+
+.plat {
+    float: left;
+    position: relative;
+}
+
+.cap {
+    position:absolute; /* absolute position (so we can position it where we want)*/  
+    top:0px; /* position will be on bottom */  
+    left:0px;  
+    width:100%;  
+    /* styling bellow */  
+    background-color:rgba(0,0,0,0.8);
+}
+
+.fb-cap {
+    position: absolute;
+    bottom: 0px;
+    width:100%;
+    background-color:rgba(0,0,0,0.8);
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+    #musicvid {
+        position: absolute;
+        display: block;
+        top: 20px;
+        left:75%%;
+    }
+
+    #mobile-nav {
+        display: none;
+    }
+
+    #head {
+        background-image: url('../img/4637.jpg');
+        background-repeat:no-repeat;
+        /*height: 655px;*/
+        background-position: 1000%, 100%;
+    }
+    #head-text {
+        background-color:rgba(0,0,0,0.8);
+        padding: 15px;
+        width: 600px;
+        color: white;
+    }
+    #smt {
+        position: relative;
+    }
+
+    #media {
+        display:block;
+        top:20px;
+        left:0px;
+        position: absolute;
+    }
+
+    #media > img {
+        margin-bottom: 5px;
+    }
+
+    #mobile-media {
+        display:none;
+    }
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+
+    #one {
+      position: absolute;
+        top:-50%; 
+    }
+
+    .carousel img {
+        position: absolute;
+        min-width: 100%;
+        top: -40%;
+    }
+
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+    #two {
+        position: absolute;
+        top:0px;
+    }
+
+    .teamcap {
+        position:absolute; /* absolute position (so we can position it where we want)*/  
+        top:0px; /* position will be on bottom */  
+        left:0px;  
+        width:100%;  
+    /* styling bellow */  
+        background-color:rgba(0,0,0,0.8);
+    }
+
+}
+
+@media (min-width: 980px) and (max-width: 1199px) {
+
+    #mobile-nav {
+        display: none;
+    }
+
+    #musicvid {
+        position: absolute;
+        display: block;
+        top: 20px;
+        left:75%%;
+    }
+
+    #head {
+        background-image: url('../img/4285.jpg');
+        background-repeat:no-repeat;
+        background-attachment: scroll;
+        background-position: 70%, -200%;
+    }
+    #head-text {
+        background-color:rgba(0,0,0,0.5);
+        padding: 15px;
+        color: white;
+    }
+    #smt {
+        position: relative;
+    }
+
+    #media {
+        display:block;
+        top:20px;
+        left:0px;
+        position: absolute;
+    }
+
+    #media > img {
+        margin-bottom: 5px;
+    }
+
+    #mobile-media {
+        display:none;
+    }
+    .teamcap {
+        position:absolute; /* absolute position (so we can position it where we want)*/  
+        bottom:0px; /* position will be on bottom */  
+        left:0px;  
+        width:100%;  
+    /* styling bellow */  
+        background-color:rgba(0,0,0,0.8);
+    }
+
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+    #mobile-nav {
+        display: none;
+    }
+
+    #musicvid {
+        position: absolute;
+        display: block;
+        top: 20px;
+        left:75%%;
+    }
+
+    #head {
+        background-image: url('../img/4285.jpg');
+        background-repeat:no-repeat;
+        background-attachment: scroll;
+        background-position: 70%, -200%;
+    }
+    #head-text {
+        background-color:rgba(0,0,0,0.5);
+        padding: 15px;
+        color: white;
+    }
+    #smt {
+        position: relative;
+    }
+
+    #media {
+        display:block;
+        top:20px;
+        left:0px;
+        position: absolute;
+    }
+
+    #media > img {
+        margin-bottom: 5px;
+    }
+
+    #mobile-media {
+        display:none;
+    }
+    .teamcap {
+        position:absolute; /* absolute position (so we can position it where we want)*/  
+        bottom:0px; /* position will be on bottom */  
+        left:0px;  
+        width:100%;  
+    /* styling bellow */  
+        background-color:rgba(0,0,0,0.8);
+    }
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    #main-nav {
+        display: none;
+    }
+
+    #media {
+        display:none;
+    }
+
+    #mobile-nav {
+        display: inline;
+    }
+
+    #musicvid {
+        display: none;
+    }
+
+    #mobile-media {
+        margin-bottom: 15px;
+    }
+
+    #head {
+        background-image: url('../img/4285.jpg');
+        background-repeat:no-repeat;
+        background-attachment: scroll;
+        background-position: 70%, -200%;
+    }
+    #head-text {
+        /*background-color:rgba(0,0,0,0.5);*/
+        padding: 15px;
+        color: white;
+    }
+    #smt {
+        position: relative;
+    }
+    .teamcap {
+        position:absolute; /* absolute position (so we can position it where we want)*/  
+        bottom:0px; /* position will be on bottom */  
+        left:0px;  
+        width:100%;  
+    /* styling bellow */  
+        background-color:rgba(0,0,0,0.8);
+    }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+    #main-nav {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: inline;
+    }
+
+    #media {
+        display: none;
+    }
+
+    #mobile-media {
+        margin-bottom: 15px;
+    }
+
+    #musicvid {
+        display: none;
+    }
+
+    #head {
+        background-image: none;
+        /*background-image: url('../joe-pix/4285.jpg');*/
+        background-color:rgba(72,145,206,1);
+        background-repeat:no-repeat;
+        background-attachment: scroll;
+        background-position: 70%, -200%;
+    }
+    #head-text {
+        padding: 15px;
+        color: rgba(216,165,32,1);
+        font-weight: normal;
+    }
+    #smt {
+        position: relative;
+    }
+    .teamcap {
+        position:absolute; /* absolute position (so we can position it where we want)*/  
+        bottom:0px; /* position will be on bottom */  
+        left:0px;  
+        width:100%;  
+    /* styling bellow */  
+        background-color:rgba(0,0,0,0.8);
+    }
+
+}
+
+@media (max-width: 320px) {
+
+
+    #main-nav {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: inline;
+    }
+
+    #media {
+        display: none;
+    }
+
+    #mobile-media {
+        margin-bottom: 15px;
+    }
+    #musicvid {
+        display: none;
+    }
+
+    #head {
+        background-image: none;
+        /*background-image: url('../joe-pix/4285.jpg');*/
+        background-color:rgba(72,145,206,1);
+        background-repeat:no-repeat;
+        background-attachment: scroll;
+        background-position: 70%, -200%;
+    }
+    #head-text {
+        padding: 15px;
+        color: rgba(216,165,32,1);
+                font-weight: normal;
+
+    }
+    #smt {
+        position: relative;
+    }
+    .teamcap {
+        position:absolute; /* absolute position (so we can position it where we want)*/  
+        bottom:0px; /* position will be on bottom */  
+        left:0px;  
+        width:100%;  
+    /* styling bellow */  
+        background-color:rgba(0,0,0,0.8);
+    }
+}
+
+
